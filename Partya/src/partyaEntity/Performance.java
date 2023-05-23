@@ -1,4 +1,4 @@
-package Entity;
+package partyaEntity;
 
 import java.util.Date;
 import java.util.Objects;

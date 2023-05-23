@@ -1,4 +1,4 @@
-package Entity;
+package partyaEntity;
 
 public enum District {
 	North,

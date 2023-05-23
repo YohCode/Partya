@@ -4,13 +4,12 @@ import java.awt.EventQueue;
 import java.sql.Time;
 import java.util.Date;
 import Control.*;
+import partyaEntity.*;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-import Entity.Artist;
 import javax.swing.JButton;
-import Entity.*;
 public class Artists_of_area extends JFrame {
 
 	private JPanel contentPane;

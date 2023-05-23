@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Entity;
+package partyaEntity;
 
 import java.sql.Time;
 import java.util.Date;

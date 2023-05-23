@@ -6,7 +6,8 @@ import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import Entity.*;
+
+import partyaEntity.*;
 public class Importing_Party_Information extends JFrame {
 
 	private JPanel contentPane;

@@ -7,14 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import Boundry.Artists_of_area;
 import Boundry.Importing_Party_Information;
 import Boundry.specific_Party;
-import Entity.Address;
-import Entity.Area;
-import Entity.Artist;
-import Entity.District;
-import Entity.MusicGenre;
-import Entity.Participant;
-import Entity.Party;
-import Entity.Performance;
+import partyaEntity.Address;
+import partyaEntity.Area;
+import partyaEntity.Artist;
+import partyaEntity.District;
+import partyaEntity.MusicGenre;
+import partyaEntity.Participant;
+import partyaEntity.Party;
+import partyaEntity.Performance;
 
 abstract public class partyaSystem  {
 	private partyaSystem DB;

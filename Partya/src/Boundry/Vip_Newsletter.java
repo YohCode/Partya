@@ -7,7 +7,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Control.partyaSystem;
-import Entity.Friends;
+import partyaEntity.Friends;
+
 import java.util.Date;
 public class Vip_Newsletter extends JFrame {
 
