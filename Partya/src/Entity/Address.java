@@ -3,6 +3,8 @@
  */
 package Entity;
 
+import java.util.Objects;
+
 /**
  * @author aliab
  *
@@ -54,12 +56,27 @@ public class Address {
 		City = city;
 		AddressDistrict = addressDistrict;
 	}
-	public Address(int addressId) {
-		super();
-		AddressId = addressId;
+	
+	@Override
+	public String toString() {
+		return "Address [AddressId=" + AddressId + ", Street=" + Street + ", BuldingNo=" + BuldingNo + ", City=" + City
+				+ ", AddressDistrict=" + AddressDistrict + "]";
 	}
-	public Address() {
-		super();
+	@Override
+	public int hashCode() {
+		return Objects.hash(AddressDistrict, AddressId, BuldingNo, City, Street);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Address other = (Address) obj;
+		return AddressDistrict == other.AddressDistrict && AddressId == other.AddressId && BuldingNo == other.BuldingNo
+				&& Objects.equals(City, other.City) && Objects.equals(Street, other.Street);
 	}
 	
 	

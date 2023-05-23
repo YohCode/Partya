@@ -1,5 +1,6 @@
 package Entity;
 
+import java.util.Objects;
 
 public class ParticipantOfParty {
 	private int partyID;
@@ -54,6 +55,28 @@ public class ParticipantOfParty {
 	public ParticipantOfParty() {
 		super();
 	}
-
+	@Override
+	public int hashCode() {
+		return Objects.hash(location, participantID, partyID, status, ticketINo);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ParticipantOfParty other = (ParticipantOfParty) obj;
+		return Objects.equals(location, other.location) && participantID == other.participantID
+				&& partyID == other.partyID && Objects.equals(status, other.status) && ticketINo == other.ticketINo;
+	}
+	@Override
+	public String toString() {
+		return "ParticipantOfParty [partyID=" + partyID + ", participantID=" + participantID + ", ticketINo="
+				+ ticketINo + ", location=" + location + ", status=" + status + "]";
+	}
+	
+	
 
 }

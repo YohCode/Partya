@@ -8,5 +8,4 @@ public enum MusicGenre {
 	Folk,
 	Classic,
 	Jaz
-
 }

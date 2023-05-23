@@ -3,6 +3,8 @@
  */
 package Entity;
 
+import java.util.Objects;
+
 /**
  * @author aliab
  *
@@ -38,12 +40,26 @@ public class Artist {
 		FirstName = firstName;
 		LastName = lastName;
 	}
-	public Artist(int artistID) {
-		super();
-		ArtistID = artistID;
+	@Override
+	public int hashCode() {
+		return Objects.hash(ArtistID, FirstName, LastName);
 	}
-	public Artist() {
-		super();
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Artist other = (Artist) obj;
+		return ArtistID == other.ArtistID && Objects.equals(FirstName, other.FirstName)
+				&& Objects.equals(LastName, other.LastName);
 	}
+	@Override
+	public String toString() {
+		return "Artist [ArtistID=" + ArtistID + ", FirstName=" + FirstName + ", LastName=" + LastName + "]";
+	}
+	
 	
 }

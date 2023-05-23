@@ -1,6 +1,7 @@
 package Entity;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Performance {
 	
@@ -64,13 +65,29 @@ public class Performance {
 		NumberOfParticipants = numberOfParticipants;
 		MusicStyle = musicStyle;
 	}
-	public Performance(int areaID, int artistID) {
-		super();
-		AreaID = areaID;
-		ArtistID = artistID;
+	@Override
+	public int hashCode() {
+		return Objects.hash(AreaID, ArtistID, EndTime, EventDate, MusicStyle, NumberOfParticipants, StartTime);
 	}
-	public Performance() {
-		super();
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Performance other = (Performance) obj;
+		return AreaID == other.AreaID && ArtistID == other.ArtistID && EndTime == other.EndTime
+				&& Objects.equals(EventDate, other.EventDate) && MusicStyle == other.MusicStyle
+				&& NumberOfParticipants == other.NumberOfParticipants && StartTime == other.StartTime;
 	}
+	@Override
+	public String toString() {
+		return "Performance [AreaID=" + AreaID + ", ArtistID=" + ArtistID + ", EventDate=" + EventDate + ", StartTime="
+				+ StartTime + ", EndTime=" + EndTime + ", NumberOfParticipants=" + NumberOfParticipants
+				+ ", MusicStyle=" + MusicStyle + "]";
+	}
+	
 
 }

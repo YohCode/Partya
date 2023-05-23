@@ -3,6 +3,8 @@
  */
 package Entity;
 
+import java.util.Objects;
+
 /**
  * @author aliab
  *
@@ -47,12 +49,27 @@ public class Area {
 		TicketPrice = ticketPrice;
 		AreaSize = areaSize;
 	}
-	public Area(int areaID) {
-		super();
-		AreaID = areaID;
+	@Override
+	public String toString() {
+		return "Area [AreaID=" + AreaID + ", AreaName=" + AreaName + ", TicketPrice=" + TicketPrice + ", AreaSize="
+				+ AreaSize + "]";
 	}
-	public Area() {
-		super();
+	@Override
+	public int hashCode() {
+		return Objects.hash(AreaID, AreaName, AreaSize, TicketPrice);
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Area other = (Area) obj;
+		return AreaID == other.AreaID && Objects.equals(AreaName, other.AreaName) && AreaSize == other.AreaSize
+				&& TicketPrice == other.TicketPrice;
+	}
+	
 	
 }
