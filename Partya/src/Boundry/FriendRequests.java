@@ -6,13 +6,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import Entity.Friends;
+
 public class FriendRequests extends JFrame {
 
 	private JPanel contentPane;
 
-	private List<Participants> _requests;
-	public Friends _unnamed_Friends_;
-	public Friends _unnamed_Friends_2;
+	//private List<Participants> _requests;
+	public Friends friend1;
+	public Friends friends2;
 
 	public void btnConfrim() {
 		throw new UnsupportedOperationException();

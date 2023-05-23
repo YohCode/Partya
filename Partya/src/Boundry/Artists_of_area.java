@@ -1,26 +1,28 @@
 package Boundry;
 
 import java.awt.EventQueue;
-
+import java.sql.Time;
+import java.util.Date;
+import Control.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Entity.Artist;
 import javax.swing.JButton;
-
+import Entity.*;
 public class Artists_of_area extends JFrame {
 
 	private JPanel contentPane;
 
-	private List<Artist> _artists;
-	public String _artistName;
-	public int _popularity;
-	public MusicStyle _musicStyle;
-	public Date _performanceDate;
-	public Time _startHour;
-	public Time _endHour;
-	public System _unnamed_System_;
+	//private List<Artist> _artists;
+	public String ArtistName;
+	public int Popularity;
+	public MusicGenre MusicStyle;
+	public Date PerformanceDate;
+	public Time StartHour;
+	public Time EndHour;
+	public partyaSystem DB;
 	
 
 	public void btnBack() {

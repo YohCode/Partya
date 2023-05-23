@@ -11,7 +11,7 @@ public class specific_Party extends JFrame {
 	private JPanel contentPane;
 
 	private int _partyID;
-	public List<Area> _areas;
+	//public List<Area> _areas;
 	public boolean _liveShow;
 	public String _areaName;
 	public int _ticketPrice;
@@ -20,13 +20,11 @@ public class specific_Party extends JFrame {
 	public int _maxParticipants;
 	public System _unnamed_System_;
 
-	public void btnShowMore() {
-		throw new UnsupportedOperationException();
-	}
-
-	public void btnBack() {
-		throw new UnsupportedOperationException();
-	}
+	/*
+	 * public void btnShowMore() { throw new UnsupportedOperationException(); }
+	 * 
+	 * public void btnBack() { throw new UnsupportedOperationException(); }
+	 */
 
 	/**
 	 * Create the frame.

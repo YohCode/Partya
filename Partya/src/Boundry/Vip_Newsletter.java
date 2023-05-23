@@ -6,17 +6,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import Entity.Date;
+import Control.partyaSystem;
 import Entity.Friends;
-import Entity.List;
-import Entity.Parties;
-
+import java.util.Date;
 public class Vip_Newsletter extends JFrame {
 
 	private JPanel contentPane;
-
+	private partyaSystem DB;
 	private Date _todaysDate;
-	public List<Parties> _futureParties;
+	//public List<Parties> _futureParties;
 	public Friends _unnamed_Friends_;
 
 	public void SendNotefication() {

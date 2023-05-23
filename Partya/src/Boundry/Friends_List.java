@@ -6,12 +6,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import Entity.Friends;
+
 public class Friends_List extends JFrame {
 
 	private JPanel contentPane;
 
-	private list<Participant> _friends;
-	public Friends _unnamed_Friends_;
+	//private list<Participant> _friends;
+	public Friends friendd;
 
 	public void btnAddFriend() {
 		throw new UnsupportedOperationException();

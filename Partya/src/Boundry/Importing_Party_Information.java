@@ -1,19 +1,20 @@
 package Boundry;
 
 import java.awt.EventQueue;
+import java.util.Date;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
+import Entity.*;
 public class Importing_Party_Information extends JFrame {
 
 	private JPanel contentPane;
 
-	private List<Party> _importedParties;
+	//private List<Party> _importedParties;
 	public int _partyID;
 	public String _partyName;
-	public Adress _adress;
+	public Address adress;
 	public int _buildingNo;
 	public String _city;
 	public District _district;
